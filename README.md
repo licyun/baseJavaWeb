@@ -1,7 +1,7 @@
 # TagDemo
 #JAVA WEB自定义标签库
+ ###1.注册标签库
 ```java
- 1.注册标签库
    mytaglib.dtd
    <taglib xmlns="http://java.sun.com/xml/ns/j2ee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -33,7 +33,9 @@
 			<fragment>true</fragment>
 		</attribute>
 	</tag>
-	2.建立对应的标签类,并重写doTag的标签方法
+```
+###2.建立对应的标签类,并重写doTag的标签方法
+```java
 	public class IteratorTag extends SimpleTagSupport
 	
 	public void doTag() throws JspException, IOException
@@ -50,7 +52,10 @@
 			getJspBody().invoke(null);
 		}
 	}
-	3.在jsp文件中声明标签，并引用标签
+```
+###3.在jsp文件中声明标签，并引用标签
+```java
+	
 	  //导入标签库
 	  <%@ taglib uri="https://licyun.com/mytaglib" prefix="mytag"%>
 	  //调用标签
