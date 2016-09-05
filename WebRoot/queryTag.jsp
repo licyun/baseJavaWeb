@@ -28,6 +28,6 @@ Date:
 	url="jdbc:mysql://localhost:3306/javaee"
 	user="root"
 	pass="123456"
-	sql="select * from jdbc_user;"/><br/>
+	sql="select * from user_table;"/><br/>
 </body>
 </html>
