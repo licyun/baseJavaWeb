@@ -1,5 +1,5 @@
-# TagDemo
-#JAVA WEB自定义标签库
+# TagDemo, JAVA WEB自定义标签库
+##一.方法说明
 ###1.注册标签库
 ```java
    mytaglib.dtd
@@ -65,3 +65,9 @@
 		<tr>
 		</mytag:iterator>
 ```
+##二.遇到的问题
+###1.解决The method of type must override a superclass method
+	Windows--Preferences--Java--Compiler，在右边的Compiler compliance level 修改版本为 6.0
+	项目右键->build path->configure build path->java Compiler(左边那排中) ->在右边的Compiler compliance level 修改版本为 6.0
+###2.解决 The word is not correctly spelled问题
+	在eclipse下的Window--Preference输入spell，然后把第一个复选框“Enable spell checking“给去掉就可以了
