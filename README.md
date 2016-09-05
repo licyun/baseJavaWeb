@@ -1,6 +1,6 @@
 # TagDemo
 #JAVA WEB自定义标签库
-``java
+```java
  1.注册标签库
    mytaglib.dtd
    <taglib xmlns="http://java.sun.com/xml/ns/j2ee"
@@ -59,4 +59,4 @@
 			<td>${pageScope.item}</td>
 		<tr>
 		</mytag:iterator>
-``
+```
